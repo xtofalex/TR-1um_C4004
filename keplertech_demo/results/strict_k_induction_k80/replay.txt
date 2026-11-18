@@ -1,0 +1,14 @@
+note: inputs not in trace (don't-care, written as 0): ['test']
+trace: 40 frames, Kepler reports first bad frame at cycle 39
+WARNING: sim/replay.v:36: $readmemh(sim/build/strict_k_induction_k80.memh): Not enough words in the file for the requested range [0:4095].
+cyc  30 in: rst=0 test=0 d=0 | C4004 init:-- opr=0 opa=0 sp=3 tc=0 acc=0 cy=0 | C4004 oe=0 d=0 s=0 cr=0 cm=0000 | REF oe=0 d=0 s=0 cr=0 cm=0000  REF sp=0         
+cyc  31 in: rst=0 test=0 d=0 | C4004 init:-- opr=0 opa=0 sp=3 tc=0 acc=0 cy=0 | C4004 oe=0 d=0 s=0 cr=0 cm=0000 | REF oe=0 d=0 s=0 cr=0 cm=0000  REF sp=0         
+cyc  32 in: rst=0 test=0 d=0 | C4004 init:-- opr=0 opa=0 sp=3 tc=0 acc=0 cy=0 | C4004 oe=0 d=0 s=0 cr=0 cm=0000 | REF oe=0 d=0 s=0 cr=0 cm=0000  REF sp=0         
+cyc  33 in: rst=0 test=0 d=0 | C4004 init:-- opr=0 opa=0 sp=3 tc=0 acc=0 cy=0 | C4004 oe=0 d=0 s=1 cr=0 cm=0000 | REF oe=0 d=0 s=1 cr=0 cm=0000  REF sp=0         
+cyc  34 in: rst=0 test=0 d=0 | C4004      A1 opr=0 opa=0 sp=0 tc=0 acc=0 cy=0 | C4004 oe=1 d=0 s=0 cr=0 cm=0000 | REF oe=1 d=0 s=0 cr=0 cm=0000  REF sp=0         
+cyc  35 in: rst=0 test=0 d=0 | C4004      A2 opr=0 opa=0 sp=0 tc=0 acc=0 cy=0 | C4004 oe=1 d=0 s=0 cr=0 cm=0000 | REF oe=1 d=0 s=0 cr=0 cm=0000  REF sp=0         
+cyc  36 in: rst=0 test=0 d=2 | C4004      A3 opr=0 opa=0 sp=0 tc=0 acc=0 cy=0 | C4004 oe=1 d=0 s=0 cr=1 cm=0001 | REF oe=1 d=0 s=0 cr=1 cm=0001  REF sp=0         
+cyc  37 in: rst=0 test=0 d=9 | C4004      M1 opr=0 opa=0 sp=0 tc=0 acc=0 cy=0 | C4004 oe=0 d=0 s=0 cr=0 cm=0000 | REF oe=0 d=0 s=0 cr=0 cm=0000  REF sp=0         
+cyc  38 in: rst=0 test=0 d=0 | C4004      M2 opr=2 opa=0 sp=0 tc=0 acc=0 cy=0 | C4004 oe=0 d=0 s=0 cr=0 cm=0000 | REF oe=0 d=0 s=0 cr=0 cm=0000  REF sp=0         
+cyc  39 in: rst=0 test=0 d=0 | C4004      X1 opr=2 opa=9 sp=0 tc=0 acc=0 cy=0 | C4004 oe=1 d=9 s=0 cr=0 cm=0000 | REF oe=0 d=0 s=0 cr=0 cm=0000  REF sp=0 <== DIFF
+REPLAY frames=40 diff_frames=1 first_diff=39

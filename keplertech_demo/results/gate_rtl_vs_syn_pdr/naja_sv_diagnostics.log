@@ -1,0 +1,33 @@
+=== Naja SystemVerilog Diagnostics ===
+format.version=1
+status=in_progress
+report.path="naja_sv_diagnostics.log"
+console.warning_policy=first_occurrence_per_code
+
+=== Slang Diagnostics ===
+diagnostic stage="slang" severity="warning" code="slang_diagnostic" file="../../gate/rtl_c4004_core.v" line=331 column=13 message="'case' missing 'default' label"
+diagnostic stage="slang" severity="warning" code="slang_diagnostic" file="../../gate/rtl_c4004_core.v" line=421 column=17 message="'case' missing 'default' label"
+
+=== Naja Elaboration Warnings ===
+diagnostic stage="naja_elaboration" severity="warning" code="case_comparison_two_state" file="../../gate/rtl_c4004_core.v" line=150 column=13 message="Case comparison operator '===' lowered as 2-state comparison in SNL (X/Z distinction is not preserved)"
+diagnostic stage="naja_elaboration" severity="warning" code="case_comparison_two_state" file="../../gate/rtl_c4004_core.v" line=331 column=13 message="Case comparison operator '===' lowered as 2-state comparison in SNL (X/Z distinction is not preserved)"
+diagnostic stage="naja_elaboration" severity="warning" code="case_comparison_two_state" file="../../gate/rtl_c4004_core.v" line=522 column=37 message="Case comparison operator '===' lowered as 2-state comparison in SNL (X/Z distinction is not preserved)"
+diagnostic stage="naja_elaboration" severity="warning" code="case_comparison_two_state" file="../../gate/rtl_c4004_core.v" line=556 column=45 message="Case comparison operator '===' lowered as 2-state comparison in SNL (X/Z distinction is not preserved)"
+diagnostic stage="naja_elaboration" severity="warning" code="case_comparison_two_state" file="../../gate/rtl_c4004_core.v" line=473 column=29 message="Case comparison operator '===' lowered as 2-state comparison in SNL (X/Z distinction is not preserved)"
+diagnostic stage="naja_elaboration" severity="warning" code="case_comparison_two_state" file="../../gate/rtl_c4004_core.v" line=510 column=37 message="Case comparison operator '===' lowered as 2-state comparison in SNL (X/Z distinction is not preserved)"
+diagnostic stage="naja_elaboration" severity="warning" code="case_comparison_two_state" file="../../gate/rtl_c4004_core.v" line=421 column=17 message="Case comparison operator '===' lowered as 2-state comparison in SNL (X/Z distinction is not preserved)"
+
+=== Summary ===
+summary.status=success
+count.slang.total=2
+count.slang.note=0
+count.slang.warning=2
+count.slang.error=0
+count.slang.fatal=0
+count.naja_elaboration.warning_occurrences=7
+count.naja_elaboration.warning_codes=1
+count.naja_unsupported_warning.occurrences=0
+count.naja_unsupported_warning.codes=0
+count.naja_unsupported_error.occurrences=0
+count.naja_unsupported_error.codes=0
+report.path="naja_sv_diagnostics.log"

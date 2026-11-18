@@ -1,0 +1,4 @@
+source: https://github.com/munetomo-maruyama/ttsky25a_MCS4_CPU
+commit: 107eb923c46b7aca6b81936c5a5c375ce94d9a18
+file:   src/mcs4_cpu.v (module MCS4_CPU), unmodified
+license: Apache-2.0 (LICENSE copied alongside)

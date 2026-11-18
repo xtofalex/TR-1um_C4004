@@ -1,0 +1,8 @@
+trace: 49 frames, Kepler reports first bad frame at cycle 48
+WARNING: sim/replay.v:36: $readmemh(sim/build/x1_noreg_k_induction_k80.memh): Not enough words in the file for the requested range [0:4095].
+cyc  44 in: rst=0 test=0 d=0 | C4004      A3 opr=6 opa=8 sp=0 tc=0 acc=0 cy=0 | C4004 oe=1 d=0 s=0 cr=1 cm=0001 | REF oe=1 d=0 s=0 cr=1 cm=0001  REF sp=0         
+cyc  45 in: rst=0 test=0 d=2 | C4004      M1 opr=6 opa=8 sp=0 tc=0 acc=0 cy=0 | C4004 oe=0 d=0 s=0 cr=0 cm=0000 | REF oe=0 d=0 s=0 cr=0 cm=0000  REF sp=0         
+cyc  46 in: rst=0 test=1 d=9 | C4004      M2 opr=2 opa=8 sp=0 tc=0 acc=0 cy=0 | C4004 oe=0 d=0 s=0 cr=0 cm=0000 | REF oe=0 d=0 s=0 cr=0 cm=0000  REF sp=0         
+cyc  47 in: rst=0 test=0 d=4 | C4004      X1 opr=2 opa=9 sp=0 tc=0 acc=0 cy=0 | C4004 oe=0 d=0 s=0 cr=0 cm=0000 | REF oe=0 d=0 s=0 cr=0 cm=0000  REF sp=0         
+cyc  48 in: rst=0 test=0 d=0 | C4004      X2 opr=2 opa=9 sp=0 tc=0 acc=0 cy=0 | C4004 oe=1 d=0 s=0 cr=1 cm=0001 | REF oe=1 d=1 s=0 cr=1 cm=0001  REF sp=0 <== DIFF
+REPLAY frames=49 diff_frames=1 first_diff=48

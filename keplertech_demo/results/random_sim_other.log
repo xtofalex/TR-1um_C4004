@@ -1,0 +1,93 @@
+== strict
+DIFF cyc=39 phase=5 opr=4 opa=2 sp=0 two_cycle=0 | C4004 oe=1 d=2 sync=0 cmrom=0 cmram=0000 | REF oe=0 d=0 sync=0 cmrom=0 cmram=0000
+DIFF cyc=47 phase=5 opr=4 opa=2 sp=0 two_cycle=1 | C4004 oe=1 d=7 sync=0 cmrom=0 cmram=0000 | REF oe=0 d=0 sync=0 cmrom=0 cmram=0000
+DIFF cyc=55 phase=5 opr=3 opa=a sp=0 two_cycle=0 | C4004 oe=1 d=a sync=0 cmrom=0 cmram=0000 | REF oe=0 d=0 sync=0 cmrom=0 cmram=0000
+RESULT seed=1 edge=pos cycles=100000 mismatches=16045 first=39 firstSync C4004=33 REF=33 firstA1 C4004=34 REF=34
+COVER JMS=589 (nop'd 0) BBL=591 (nop'd 0) maxSP=3 JCN=616 ISZ=541 SRC=286 FIN=324 JIN=282 IO=623
+DIFF cyc=39 phase=5 opr=4 opa=2 sp=0 two_cycle=0 | C4004 oe=1 d=2 sync=0 cmrom=0 cmram=0000 | REF oe=0 d=0 sync=0 cmrom=0 cmram=0000
+DIFF cyc=47 phase=5 opr=4 opa=2 sp=0 two_cycle=1 | C4004 oe=1 d=7 sync=0 cmrom=0 cmram=0000 | REF oe=0 d=0 sync=0 cmrom=0 cmram=0000
+DIFF cyc=55 phase=5 opr=3 opa=a sp=0 two_cycle=0 | C4004 oe=1 d=a sync=0 cmrom=0 cmram=0000 | REF oe=0 d=0 sync=0 cmrom=0 cmram=0000
+RESULT seed=1 edge=neg cycles=100000 mismatches=16045 first=39 firstSync C4004=33 REF=33 firstA1 C4004=34 REF=34
+COVER JMS=589 (nop'd 0) BBL=591 (nop'd 0) maxSP=3 JCN=616 ISZ=541 SRC=286 FIN=324 JIN=282 IO=623
+DIFF cyc=39 phase=5 opr=0 opa=a sp=0 two_cycle=0 | C4004 oe=1 d=a sync=0 cmrom=0 cmram=0000 | REF oe=0 d=0 sync=0 cmrom=0 cmram=0000
+DIFF cyc=47 phase=5 opr=0 opa=1 sp=0 two_cycle=0 | C4004 oe=1 d=1 sync=0 cmrom=0 cmram=0000 | REF oe=0 d=0 sync=0 cmrom=0 cmram=0000
+DIFF cyc=55 phase=5 opr=a opa=1 sp=0 two_cycle=0 | C4004 oe=1 d=1 sync=0 cmrom=0 cmram=0000 | REF oe=0 d=0 sync=0 cmrom=0 cmram=0000
+RESULT seed=2 edge=pos cycles=100000 mismatches=15352 first=39 firstSync C4004=33 REF=33 firstA1 C4004=34 REF=34
+COVER JMS=618 (nop'd 0) BBL=590 (nop'd 0) maxSP=3 JCN=582 ISZ=579 SRC=292 FIN=297 JIN=281 IO=619
+DIFF cyc=39 phase=5 opr=0 opa=a sp=0 two_cycle=0 | C4004 oe=1 d=a sync=0 cmrom=0 cmram=0000 | REF oe=0 d=0 sync=0 cmrom=0 cmram=0000
+DIFF cyc=47 phase=5 opr=0 opa=1 sp=0 two_cycle=0 | C4004 oe=1 d=1 sync=0 cmrom=0 cmram=0000 | REF oe=0 d=0 sync=0 cmrom=0 cmram=0000
+DIFF cyc=55 phase=5 opr=a opa=1 sp=0 two_cycle=0 | C4004 oe=1 d=1 sync=0 cmrom=0 cmram=0000 | REF oe=0 d=0 sync=0 cmrom=0 cmram=0000
+RESULT seed=2 edge=neg cycles=100000 mismatches=15352 first=39 firstSync C4004=33 REF=33 firstA1 C4004=34 REF=34
+COVER JMS=618 (nop'd 0) BBL=590 (nop'd 0) maxSP=3 JCN=582 ISZ=579 SRC=292 FIN=297 JIN=281 IO=619
+DIFF cyc=39 phase=5 opr=c opa=2 sp=3 two_cycle=0 | C4004 oe=1 d=2 sync=0 cmrom=0 cmram=0000 | REF oe=0 d=0 sync=0 cmrom=0 cmram=0000
+DIFF cyc=47 phase=5 opr=e opa=c sp=3 two_cycle=0 | C4004 oe=1 d=c sync=0 cmrom=0 cmram=0000 | REF oe=0 d=0 sync=0 cmrom=0 cmram=0000
+DIFF cyc=55 phase=5 opr=2 opa=9 sp=3 two_cycle=0 | C4004 oe=1 d=9 sync=0 cmrom=0 cmram=0000 | REF oe=0 d=0 sync=0 cmrom=0 cmram=0000
+RESULT seed=3 edge=pos cycles=100000 mismatches=15316 first=39 firstSync C4004=33 REF=33 firstA1 C4004=34 REF=34
+COVER JMS=603 (nop'd 0) BBL=610 (nop'd 0) maxSP=3 JCN=591 ISZ=574 SRC=317 FIN=255 JIN=319 IO=639
+DIFF cyc=39 phase=5 opr=c opa=2 sp=3 two_cycle=0 | C4004 oe=1 d=2 sync=0 cmrom=0 cmram=0000 | REF oe=0 d=0 sync=0 cmrom=0 cmram=0000
+DIFF cyc=47 phase=5 opr=e opa=c sp=3 two_cycle=0 | C4004 oe=1 d=c sync=0 cmrom=0 cmram=0000 | REF oe=0 d=0 sync=0 cmrom=0 cmram=0000
+DIFF cyc=55 phase=5 opr=2 opa=9 sp=3 two_cycle=0 | C4004 oe=1 d=9 sync=0 cmrom=0 cmram=0000 | REF oe=0 d=0 sync=0 cmrom=0 cmram=0000
+RESULT seed=3 edge=neg cycles=100000 mismatches=15316 first=39 firstSync C4004=33 REF=33 firstA1 C4004=34 REF=34
+COVER JMS=603 (nop'd 0) BBL=610 (nop'd 0) maxSP=3 JCN=591 ISZ=574 SRC=317 FIN=255 JIN=319 IO=639
+== x1
+DIFF cyc=338 phase=0 opr=1 opa=3 sp=2 two_cycle=0 | C4004 oe=1 d=f sync=0 cmrom=0 cmram=0000 | REF oe=1 d=5 sync=0 cmrom=0 cmram=0000
+DIFF cyc=339 phase=1 opr=1 opa=3 sp=2 two_cycle=0 | C4004 oe=1 d=0 sync=0 cmrom=0 cmram=0000 | REF oe=1 d=2 sync=0 cmrom=0 cmram=0000
+DIFF cyc=346 phase=0 opr=9 opa=e sp=2 two_cycle=0 | C4004 oe=1 d=0 sync=0 cmrom=0 cmram=0000 | REF oe=1 d=6 sync=0 cmrom=0 cmram=0000
+RESULT seed=1 edge=pos cycles=100000 mismatches=3549 first=338 firstSync C4004=33 REF=33 firstA1 C4004=34 REF=34
+COVER JMS=589 (nop'd 0) BBL=591 (nop'd 0) maxSP=3 JCN=616 ISZ=541 SRC=286 FIN=324 JIN=282 IO=623
+DIFF cyc=338 phase=0 opr=1 opa=3 sp=2 two_cycle=0 | C4004 oe=1 d=f sync=0 cmrom=0 cmram=0000 | REF oe=1 d=5 sync=0 cmrom=0 cmram=0000
+DIFF cyc=339 phase=1 opr=1 opa=3 sp=2 two_cycle=0 | C4004 oe=1 d=0 sync=0 cmrom=0 cmram=0000 | REF oe=1 d=2 sync=0 cmrom=0 cmram=0000
+DIFF cyc=346 phase=0 opr=9 opa=e sp=2 two_cycle=0 | C4004 oe=1 d=0 sync=0 cmrom=0 cmram=0000 | REF oe=1 d=6 sync=0 cmrom=0 cmram=0000
+RESULT seed=1 edge=neg cycles=100000 mismatches=3549 first=338 firstSync C4004=33 REF=33 firstA1 C4004=34 REF=34
+COVER JMS=589 (nop'd 0) BBL=591 (nop'd 0) maxSP=3 JCN=616 ISZ=541 SRC=286 FIN=324 JIN=282 IO=623
+DIFF cyc=274 phase=0 opr=1 opa=1 sp=3 two_cycle=0 | C4004 oe=1 d=4 sync=0 cmrom=0 cmram=0000 | REF oe=1 d=d sync=0 cmrom=0 cmram=0000
+DIFF cyc=275 phase=1 opr=1 opa=1 sp=3 two_cycle=0 | C4004 oe=1 d=3 sync=0 cmrom=0 cmram=0000 | REF oe=1 d=7 sync=0 cmrom=0 cmram=0000
+DIFF cyc=282 phase=0 opr=f opa=e sp=3 two_cycle=0 | C4004 oe=1 d=5 sync=0 cmrom=0 cmram=0000 | REF oe=1 d=e sync=0 cmrom=0 cmram=0000
+RESULT seed=2 edge=pos cycles=100000 mismatches=2856 first=274 firstSync C4004=33 REF=33 firstA1 C4004=34 REF=34
+COVER JMS=618 (nop'd 0) BBL=590 (nop'd 0) maxSP=3 JCN=582 ISZ=579 SRC=292 FIN=297 JIN=281 IO=619
+DIFF cyc=274 phase=0 opr=1 opa=1 sp=3 two_cycle=0 | C4004 oe=1 d=4 sync=0 cmrom=0 cmram=0000 | REF oe=1 d=d sync=0 cmrom=0 cmram=0000
+DIFF cyc=275 phase=1 opr=1 opa=1 sp=3 two_cycle=0 | C4004 oe=1 d=3 sync=0 cmrom=0 cmram=0000 | REF oe=1 d=7 sync=0 cmrom=0 cmram=0000
+DIFF cyc=282 phase=0 opr=f opa=e sp=3 two_cycle=0 | C4004 oe=1 d=5 sync=0 cmrom=0 cmram=0000 | REF oe=1 d=e sync=0 cmrom=0 cmram=0000
+RESULT seed=2 edge=neg cycles=100000 mismatches=2856 first=274 firstSync C4004=33 REF=33 firstA1 C4004=34 REF=34
+COVER JMS=618 (nop'd 0) BBL=590 (nop'd 0) maxSP=3 JCN=582 ISZ=579 SRC=292 FIN=297 JIN=281 IO=619
+DIFF cyc=1498 phase=0 opr=1 opa=9 sp=2 two_cycle=0 | C4004 oe=1 d=5 sync=0 cmrom=0 cmram=0000 | REF oe=1 d=4 sync=0 cmrom=0 cmram=0000
+DIFF cyc=1499 phase=1 opr=1 opa=9 sp=2 two_cycle=0 | C4004 oe=1 d=9 sync=0 cmrom=0 cmram=0000 | REF oe=1 d=c sync=0 cmrom=0 cmram=0000
+DIFF cyc=1506 phase=0 opr=9 opa=5 sp=2 two_cycle=0 | C4004 oe=1 d=6 sync=0 cmrom=0 cmram=0000 | REF oe=1 d=5 sync=0 cmrom=0 cmram=0000
+RESULT seed=3 edge=pos cycles=100000 mismatches=2820 first=1498 firstSync C4004=33 REF=33 firstA1 C4004=34 REF=34
+COVER JMS=603 (nop'd 0) BBL=610 (nop'd 0) maxSP=3 JCN=591 ISZ=574 SRC=317 FIN=255 JIN=319 IO=639
+DIFF cyc=1498 phase=0 opr=1 opa=9 sp=2 two_cycle=0 | C4004 oe=1 d=5 sync=0 cmrom=0 cmram=0000 | REF oe=1 d=4 sync=0 cmrom=0 cmram=0000
+DIFF cyc=1499 phase=1 opr=1 opa=9 sp=2 two_cycle=0 | C4004 oe=1 d=9 sync=0 cmrom=0 cmram=0000 | REF oe=1 d=c sync=0 cmrom=0 cmram=0000
+DIFF cyc=1506 phase=0 opr=9 opa=5 sp=2 two_cycle=0 | C4004 oe=1 d=6 sync=0 cmrom=0 cmram=0000 | REF oe=1 d=5 sync=0 cmrom=0 cmram=0000
+RESULT seed=3 edge=neg cycles=100000 mismatches=2820 first=1498 firstSync C4004=33 REF=33 firstA1 C4004=34 REF=34
+COVER JMS=603 (nop'd 0) BBL=610 (nop'd 0) maxSP=3 JCN=591 ISZ=574 SRC=317 FIN=255 JIN=319 IO=639
+== x1_tc
+DIFF cyc=1290 phase=0 opr=c opa=d sp=0 two_cycle=0 | C4004 oe=1 d=0 sync=0 cmrom=0 cmram=0000 | REF oe=1 d=d sync=0 cmrom=0 cmram=0000
+DIFF cyc=1292 phase=2 opr=c opa=d sp=0 two_cycle=0 | C4004 oe=1 d=0 sync=0 cmrom=1 cmram=0001 | REF oe=1 d=5 sync=0 cmrom=1 cmram=0001
+DIFF cyc=1298 phase=0 opr=1 opa=a sp=0 two_cycle=1 | C4004 oe=1 d=1 sync=0 cmrom=0 cmram=0000 | REF oe=1 d=e sync=0 cmrom=0 cmram=0000
+RESULT seed=1 edge=pos cycles=100000 mismatches=2411 first=1290 firstSync C4004=33 REF=33 firstA1 C4004=34 REF=34
+COVER JMS=589 (nop'd 0) BBL=591 (nop'd 0) maxSP=3 JCN=616 ISZ=541 SRC=286 FIN=324 JIN=282 IO=623
+DIFF cyc=1290 phase=0 opr=c opa=d sp=0 two_cycle=0 | C4004 oe=1 d=0 sync=0 cmrom=0 cmram=0000 | REF oe=1 d=d sync=0 cmrom=0 cmram=0000
+DIFF cyc=1292 phase=2 opr=c opa=d sp=0 two_cycle=0 | C4004 oe=1 d=0 sync=0 cmrom=1 cmram=0001 | REF oe=1 d=5 sync=0 cmrom=1 cmram=0001
+DIFF cyc=1298 phase=0 opr=1 opa=a sp=0 two_cycle=1 | C4004 oe=1 d=1 sync=0 cmrom=0 cmram=0000 | REF oe=1 d=e sync=0 cmrom=0 cmram=0000
+RESULT seed=1 edge=neg cycles=100000 mismatches=2411 first=1290 firstSync C4004=33 REF=33 firstA1 C4004=34 REF=34
+COVER JMS=589 (nop'd 0) BBL=591 (nop'd 0) maxSP=3 JCN=616 ISZ=541 SRC=286 FIN=324 JIN=282 IO=623
+DIFF cyc=1778 phase=0 opr=c opa=1 sp=1 two_cycle=0 | C4004 oe=1 d=3 sync=0 cmrom=0 cmram=0000 | REF oe=1 d=1 sync=0 cmrom=0 cmram=0000
+DIFF cyc=1779 phase=1 opr=c opa=1 sp=1 two_cycle=0 | C4004 oe=1 d=7 sync=0 cmrom=0 cmram=0000 | REF oe=1 d=c sync=0 cmrom=0 cmram=0000
+DIFF cyc=1780 phase=2 opr=c opa=1 sp=1 two_cycle=0 | C4004 oe=1 d=3 sync=0 cmrom=1 cmram=0001 | REF oe=1 d=4 sync=0 cmrom=1 cmram=0001
+RESULT seed=2 edge=pos cycles=100000 mismatches=1839 first=1778 firstSync C4004=33 REF=33 firstA1 C4004=34 REF=34
+COVER JMS=618 (nop'd 0) BBL=590 (nop'd 0) maxSP=3 JCN=582 ISZ=579 SRC=292 FIN=297 JIN=281 IO=619
+DIFF cyc=1778 phase=0 opr=c opa=1 sp=1 two_cycle=0 | C4004 oe=1 d=3 sync=0 cmrom=0 cmram=0000 | REF oe=1 d=1 sync=0 cmrom=0 cmram=0000
+DIFF cyc=1779 phase=1 opr=c opa=1 sp=1 two_cycle=0 | C4004 oe=1 d=7 sync=0 cmrom=0 cmram=0000 | REF oe=1 d=c sync=0 cmrom=0 cmram=0000
+DIFF cyc=1780 phase=2 opr=c opa=1 sp=1 two_cycle=0 | C4004 oe=1 d=3 sync=0 cmrom=1 cmram=0001 | REF oe=1 d=4 sync=0 cmrom=1 cmram=0001
+RESULT seed=2 edge=neg cycles=100000 mismatches=1839 first=1778 firstSync C4004=33 REF=33 firstA1 C4004=34 REF=34
+COVER JMS=618 (nop'd 0) BBL=590 (nop'd 0) maxSP=3 JCN=582 ISZ=579 SRC=292 FIN=297 JIN=281 IO=619
+DIFF cyc=3514 phase=0 opr=c opa=8 sp=1 two_cycle=0 | C4004 oe=1 d=f sync=0 cmrom=0 cmram=0000 | REF oe=1 d=6 sync=0 cmrom=0 cmram=0000
+DIFF cyc=3515 phase=1 opr=c opa=8 sp=1 two_cycle=0 | C4004 oe=1 d=2 sync=0 cmrom=0 cmram=0000 | REF oe=1 d=6 sync=0 cmrom=0 cmram=0000
+DIFF cyc=3516 phase=2 opr=c opa=8 sp=1 two_cycle=0 | C4004 oe=1 d=a sync=0 cmrom=1 cmram=0001 | REF oe=1 d=3 sync=0 cmrom=1 cmram=0001
+RESULT seed=3 edge=pos cycles=100000 mismatches=1857 first=3514 firstSync C4004=33 REF=33 firstA1 C4004=34 REF=34
+COVER JMS=603 (nop'd 0) BBL=610 (nop'd 0) maxSP=3 JCN=591 ISZ=574 SRC=317 FIN=255 JIN=319 IO=639
+DIFF cyc=3514 phase=0 opr=c opa=8 sp=1 two_cycle=0 | C4004 oe=1 d=f sync=0 cmrom=0 cmram=0000 | REF oe=1 d=6 sync=0 cmrom=0 cmram=0000
+DIFF cyc=3515 phase=1 opr=c opa=8 sp=1 two_cycle=0 | C4004 oe=1 d=2 sync=0 cmrom=0 cmram=0000 | REF oe=1 d=6 sync=0 cmrom=0 cmram=0000
+DIFF cyc=3516 phase=2 opr=c opa=8 sp=1 two_cycle=0 | C4004 oe=1 d=a sync=0 cmrom=1 cmram=0001 | REF oe=1 d=3 sync=0 cmrom=1 cmram=0001
+RESULT seed=3 edge=neg cycles=100000 mismatches=1857 first=3514 firstSync C4004=33 REF=33 firstA1 C4004=34 REF=34
+COVER JMS=603 (nop'd 0) BBL=610 (nop'd 0) maxSP=3 JCN=591 ISZ=574 SRC=317 FIN=255 JIN=319 IO=639

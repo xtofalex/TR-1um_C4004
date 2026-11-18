@@ -1,0 +1,2 @@
+cmd: /Users/xtof/WORK/TR-1um_C4004/sec-demo/tools/kepler-formal/build/src/bin/kepler-formal -sv -v sec --sec-engine k_induction -k 90 --sec-reset-cycles 3 --sec-reset-port rst=1 --report-skipped-pos --design1 /Users/xtof/WORK/TR-1um_C4004/sec-demo/cfg/full_c4004.v --design2 /Users/xtof/WORK/TR-1um_C4004/sec-demo/cfg/full_ref.v
+KEPLER_SEC_DIAG=1

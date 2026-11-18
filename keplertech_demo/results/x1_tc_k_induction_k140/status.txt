@@ -1,0 +1,3 @@
+cmd: /Users/xtof/WORK/TR-1um_C4004/sec-demo/tools/kepler-formal/build/src/bin/kepler-formal -sv -v sec --sec-engine k_induction -k 140 --sec-reset-cycles 3 --sec-reset-port rst=1 --report-skipped-pos --design1 /Users/xtof/WORK/TR-1um_C4004/sec-demo/cfg/x1_tc_c4004.v --design2 /Users/xtof/WORK/TR-1um_C4004/sec-demo/cfg/x1_tc_ref.v
+exit: 3  wall: 2808 s
+           845742080  maximum resident set size

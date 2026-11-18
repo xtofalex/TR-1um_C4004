@@ -1,0 +1,7 @@
+{"items": [
+  {"kind": "instance", "target": "_1139_", "label": "sram_src_m2_q (1 in M2 of SRC)", "fill": "#ff7f0e55"},
+  {"kind": "instance", "target": "u_sram", "label": "SRAM128: A must hold while CE=1"},
+  {"kind": "net", "target": "d_in[1]", "width": 3},
+  {"kind": "net", "target": "d_in[2]", "width": 3},
+  {"kind": "net", "target": "d_in[3]", "width": 3}
+]}

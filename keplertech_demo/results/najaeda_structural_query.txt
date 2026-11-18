@@ -1,0 +1,22 @@
+# najaeda structural query on openroad/c4004_core_syn.v
+cells: 638 instances, 67 sequential, NAND2=81, OAI21=73, NOR2=67, AOI21=64, AOI22=44, MUXDFFRB=40, BUF_X2=39, INV_X1=36, ...
+
+## SRAM128 input pins: top-level inputs reached without crossing a flop
+  u_sram/CE  <- - | clock/reset: clk
+  u_sram/A0  <- -
+  u_sram/A1  <- d_in[1] (2 gates)
+  u_sram/A2  <- d_in[2] (2 gates)
+  u_sram/A3  <- d_in[3] (2 gates)
+  u_sram/A4  <- -
+  u_sram/WR  <- -
+  u_sram/DIN[3] <- -
+  u_sram/DIN[2] <- -
+  u_sram/DIN[1] <- -
+  u_sram/DIN[0] <- -
+
+## Top-level inputs: first flops / macro pins that sample them
+  test     -> 1 sampling points: _1098_.B (MUXDFFRB)
+  d_in[3]  -> 18 sampling points: _1084_.B (MUXDFFRB); _1097_.B (MUXDFFRB); _1102_.B (MUXDFFRB); _1107_.B (MUXDFFRB); _1111_.B (MUXDFFRB); _1119_.B (MUXDFFRB); _1136_.D (DFFRB); _1137_.D (DFFRB); _1138_.D (DFFRB); _1139_.D (DFFRB); u_ff_cmram0.D (DFFRB); u_ff_cmram1.D (DFFRB); u_ff_cmram2.D (DFFRB); u_ff_cmram3.D (DFFRB); u_ff_cmrom.D (DFFRB); u_ff_dout3.D (DFFRB); u_ff_sram_idle.D (DFFRB); u_sram.A3 (SRAM128)
+  d_in[2]  -> 20 sampling points: _1083_.B (MUXDFFRB); _1096_.B (MUXDFFRB); _1097_.B (MUXDFFRB); _1101_.B (MUXDFFRB); _1102_.B (MUXDFFRB); _1106_.B (MUXDFFRB); _1110_.B (MUXDFFRB); _1119_.B (MUXDFFRB); _1136_.D (DFFRB); _1137_.D (DFFRB); _1138_.D (DFFRB); _1139_.D (DFFRB); u_ff_cmram0.D (DFFRB); u_ff_cmram1.D (DFFRB); u_ff_cmram2.D (DFFRB); u_ff_cmram3.D (DFFRB); u_ff_cmrom.D (DFFRB); u_ff_dout2.D (DFFRB); u_ff_sram_idle.D (DFFRB); u_sram.A2 (SRAM128)
+  d_in[1]  -> 23 sampling points: _1082_.B (MUXDFFRB); _1095_.B (MUXDFFRB); _1096_.B (MUXDFFRB); _1097_.B (MUXDFFRB); _1100_.B (MUXDFFRB); _1101_.B (MUXDFFRB); _1102_.B (MUXDFFRB); _1105_.B (MUXDFFRB); _1109_.B (MUXDFFRB); _1119_.B (MUXDFFRB); _1135_.D (DFFRB); _1136_.D (DFFRB); _1137_.D (DFFRB); _1138_.D (DFFRB); _1139_.D (DFFRB); u_ff_cmram0.D (DFFRB); u_ff_cmram1.D (DFFRB); u_ff_cmram2.D (DFFRB); u_ff_cmram3.D (DFFRB); u_ff_cmrom.D (DFFRB); u_ff_dout1.D (DFFRB); u_ff_sram_idle.D (DFFRB); u_sram.A1 (SRAM128)
+  d_in[0]  -> 25 sampling points: _1081_.B (MUXDFFRB); _1094_.B (MUXDFFRB); _1095_.B (MUXDFFRB); _1096_.B (MUXDFFRB); _1097_.B (MUXDFFRB); _1099_.B (MUXDFFRB); _1100_.B (MUXDFFRB); _1101_.B (MUXDFFRB); _1102_.B (MUXDFFRB); _1104_.B (MUXDFFRB); _1108_.B (MUXDFFRB); _1119_.B (MUXDFFRB); _1134_.D (DFFRB); _1135_.D (DFFRB); _1136_.D (DFFRB); _1137_.D (DFFRB); _1138_.D (DFFRB); _1139_.D (DFFRB); u_ff_cmram0.D (DFFRB); u_ff_cmram1.D (DFFRB); u_ff_cmram2.D (DFFRB); u_ff_cmram3.D (DFFRB); u_ff_cmrom.D (DFFRB); u_ff_dout0.D (DFFRB); u_ff_sram_idle.D (DFFRB)
