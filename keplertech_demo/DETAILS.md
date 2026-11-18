@@ -88,7 +88,8 @@ arbitrary.
 * k-induction finds no difference through cycle 59.
 * Random lockstep simulation (`gate/tb_rtl_vs_gate.v`, cell models from
   `openroad/primitives.v`) checks the 11 pins and the 11 SRAM pins every cycle,
-  with 0 mismatches over 5 × 10⁶ cycles.
+  with 0 mismatches over 5 seeds × 10⁶ cycles, with stimulus changing at either
+  clock edge.
 
 ## 4. najaeda and naja-schematic
 

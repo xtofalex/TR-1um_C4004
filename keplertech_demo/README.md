@@ -2,8 +2,9 @@
 
 Thank you for publishing the C4004 in full, from RTL to the taped-out netlist.
 A complete open design like this is rare, and it made the study below possible.
+Because the C4004 was designed with AI assistance, we also wanted to show how an independent formal check fits such a flow: each RTL or netlist change can be checked automatically.
 
-We examined the design with three open-source tools from keplertech, without
+We examined the design with three open-source tools from KeplerTech, without
 modifying it:
 
 * [**Kepler-Formal**](https://github.com/keplertech/kepler-formal): sequential
@@ -29,12 +30,13 @@ Every difference reported below was also reproduced in simulation.
 | C4004 vs MCS4_CPU | first difference at cycle 39 (X1) | 1 s |
 | … X1 not observed | difference at cycle 50 (JCN on TEST) | 15 s |
 | … TEST held constant | difference at cycle 74 (stack) | 47 min |
-| … stack kept within 3 levels | **`d_oe` (outside X1), `sync`, `cm_rom` proved equal**. `d_out`, `cm_ram`: no difference through cycle 73 | 5–26 min |
-| RTL vs `openroad/c4004_core_syn.v` | **16 of 23 signals proved equal**, including the SRAM address, CE and WR, for any SRAM contents | 13.5 min |
+| … stack kept within 3 levels | **`d_oe` (outside X1), `sync`, `cm_rom` proved equal**. `d_out`, `cm_ram`: no difference through cycle 73 | 26 min |
+| RTL vs `openroad/c4004_core_syn.v` | **16 of 23 signals proved equal**, including the SRAM address, CE and WR, for any SRAM contents | 14 min CPU |
 
 "Proved" means proved for every reachable state, not sampled. For the signals
 that did not finish within the solver budget, the bounded result holds, and
-lockstep simulation found 0 mismatches over 5 × 10⁶ cycles.
+lockstep simulation found 0 mismatches over 5 seeds × 10⁶ cycles, with stimulus
+changing at either clock edge.
 
 ## Observations
 
@@ -74,8 +76,8 @@ Kepler-Formal compared the netlist produced by Yosys and
 `insert_high_fo_buffers.py` with the RTL, treating the SRAM as a black box.
 * Proved equal: `d_out[0,2,3]`, `d_oe`, `d_hiz`, `sync`, `cm_rom`,
   `cm_ram[2]`, SRAM `A[4:0]`, `CE`, `WR`, `DIN[3]`.
-* The remaining signals are bounded, with 0 mismatches in 5 × 10⁶ simulated
-  cycles.
+* The remaining signals are bounded, with 0 mismatches over 5 seeds × 10⁶
+  cycles, with stimulus changing at either clock edge.
 * **No synthesis or buffering error was found.**
 
 ## Reproduce
